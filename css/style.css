@@ -373,6 +373,8 @@ footer .ft-navigations ul li {
 
 .ft-container-cpy {
   padding: 20px 0 0px;
+  margin-top: 20px;
+  border-top: 1px solid #c9c9c991;
 }
 
 .footer-container .ft-navigations,
@@ -565,7 +567,7 @@ footer .ft-navigations ul li {
 
 .we-serve-row .col p {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #fff;
   position: absolute;
   bottom: 30px;
@@ -860,5 +862,9 @@ footer .ft-navigations ul li {
   /* Contact Us */
   .contact-us {
     height: 500px;
+  }
+  /* Footer */
+  .ft-logo-descp , footer .ft-navigations ul li , .ft-nav-descp {
+    font-size: 14px;
   }
 }
