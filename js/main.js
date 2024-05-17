@@ -2,22 +2,20 @@
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: "aos-init", // class applied after initialization
-  animatedClassName: "aos-animate", // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 0, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  startEvent: "DOMContentLoaded",
+  initClassName: "aos-init",
+  animatedClassName: "aos-animate",
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 0, 
+  throttleDelay: 99, 
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 30, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: "cubic-bezier(0.165, 0.84, 0.44, 1)", // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+  offset: 30, 
+  delay: 0, 
+  duration: 1000, 
+  easing: "cubic-bezier(0.165, 0.84, 0.44, 1)", 
+  once: false, 
+  anchorPlacement: "top-bottom", 
 });
 
 // Header
@@ -53,26 +51,25 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Marquee Block
 const swiper1 = new Swiper(".companies.swiper", {
   loop: true,
   slidesPerView: 3,
-  speed: 1000,
   spaceBetween: 10,
+  speed: 10000, // Adjust this value to control the speed of the scroll
+  freeMode: true,
   autoplay: {
     enabled: true,
     delay: 0,
-    pauseOnMouseEnter: false,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
     waitForTransition: false,
   },
   breakpoints: {
-    // when window width is >= 1024px (desktop)
     1024: {
       slidesPerView: 4,
     },
   },
 });
+
 
 // Additional styles to ensure smooth transitions
 document.querySelector(".swiper-wrapper").style.transitionTimingFunction =
