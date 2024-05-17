@@ -79,6 +79,13 @@
           <div class="head-btn">
             <a href="#" class="btn btn-primary">Book a Meeting</a>
           </div>
+          <div class="ham">
+            <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+            </div>
         </div>
       </div>
     </header>
@@ -90,7 +97,12 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="single-slide">
-                <img src="./assets/banner-desktop.jpg" alt="" class="img-fluid">
+                <img src="" alt="" >
+                <picture>
+                  <source srcset="./assets/banner-desktop.jpg" media="(min-width: 600px)">
+                  <source srcset="./assets/banner-mobile.jpg" media="(max-width: 601px)">
+                  <img src="./assets/banner-desktop.jpg" alt="" class="img-fluid">
+              </picture>
                 <div class="container">
                   <h1 class="spot-heading">Reach the Next Level</h1>
                   <p class="spot-descp">Data Driven Revolutionary Makeover?</p>
@@ -101,7 +113,11 @@
             <div class="swiper-slide">
               <div class="single-slide">
 
-                <img src="./assets/banner-desktop.jpg" alt="" class="img-fluid">
+                <picture>
+                  <source srcset="./assets/banner-desktop.jpg" media="(min-width: 600px)">
+                  <source srcset="./assets/banner-mobile.jpg" media="(max-width: 601px)">
+                  <img src="./assets/banner-desktop.jpg" alt="" class="img-fluid">
+              </picture>
                 <div class="container">
                   <h1 class="spot-heading">Transforming Enterprises</br>
                     With Up to Date</h1>
@@ -385,10 +401,10 @@
             <input type="text" name="" id="" placeholder="Email">
           </div>
           <div class="input-field">
-            <textarea type="text" name="" id="" placeholder="Comment" > </textarea>
+             <textarea placeholder="Comment"></textarea>
           </div>
           <div class="input-field">
-            <a href="#" class="submit-btn">Submit</a>
+            <a href="#" class="submit-btn btn btn-primary">Submit</a>
           </div>
       </div>
     </section>
